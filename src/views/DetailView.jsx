@@ -27,7 +27,7 @@ const DetailView = () => {
   );
 
   return (
-    <div>
+    <div class="detail-view">
       <h2>{movie.title}</h2>
       <p>{movie.overview}</p>
       <img

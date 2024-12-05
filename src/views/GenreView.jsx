@@ -22,7 +22,7 @@ const GenreView = () => {
   };
 
   return (
-    <div>
+    <div class="genres">
       <h2>Movies in this Genre</h2>
       <div className="feature-grid">
         {movies.map((movie) => (

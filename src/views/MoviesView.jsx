@@ -29,7 +29,7 @@ const genres = [
 ];
 
 const MoviesView = () => (
-  <div className="movies-container">
+  <div className="header">
     {/* Header */}
     <Header />
 
