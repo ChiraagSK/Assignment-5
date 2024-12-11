@@ -7,17 +7,15 @@ const LoginView = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  // Predefined credentials (replace with actual logic if needed)
   const predefinedUsername = "1212@gmail.com";
   const predefinedPassword = "ILoveYou";
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check credentials
     if (username === predefinedUsername && password === predefinedPassword) {
       alert("Login successful!");
-      navigate('/movies'); // Redirect to HomeView
+      navigate('/movies');
     } else {
       alert("Invalid username or password. Please try again.");
     }

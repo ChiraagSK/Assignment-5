@@ -14,15 +14,15 @@ const GenreView = () => {
         `https://api.themoviedb.org/3/discover/movie?api_key=411dd9da619b939a28f09f83b812595b&with_genres=${genre_id}`
       )
       .then((response) => setMovies(response.data.results))
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error));//Try Catch
   }, [genre_id]);
 
   const handleMovieClick = (id) => {
-    navigate(`/movies/details/${id}`); // Navigate to the detail view with the selected movie's ID
+    navigate(`/movies/details/${id}`);
   };
 
   return (
-    <div class="genres">
+    <div>
       <h2>Movies in this Genre</h2>
       <div className="feature-grid">
         {movies.map((movie) => (

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const DetailView = () => {
-  const { id } = useParams(); // Get movie ID from URL
+  const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
